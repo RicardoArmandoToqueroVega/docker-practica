@@ -1,7 +1,7 @@
 var builder = WebApplication.CreateBuilder(args);
 var app = builder.Build();
 
-app.MapGet("/", () => "Hola Ricardo, tu API corre dentro de un contenedor Docker!");
+app.MapGet("/", () => "Hola Ricardo, ahora con CI/CD funcionando!");
 
 app.MapGet("/status", () => new
 {
